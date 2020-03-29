@@ -30,6 +30,8 @@ def random_word(rlist):
 
 def next_card():
     global current_word
+    global flip
+    flip = 0
     current_word = random_word(gre_words)
     card.configure(text = current_word, background = "black")
 
